@@ -8,7 +8,7 @@ import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.entity.mime.HttpMultipartMode;
 
 /**
- * APIUsage model.
+ * PDFOptions model.
  */
 public class PDFOptions {
     /**
@@ -66,14 +66,14 @@ public class PDFOptions {
     public String pageFormat;
 
     /**
-     * Paper width, accepts values labeled with units. If set together with ///
+     * Paper width, accepts values labeled with units. If set together with
      * PageHeight, takes priority over PageFormat.
      */
     @SerializedName("page_width")
     public String pageWidth;
 
     /**
-     * Paper height, accepts values labeled with units. If set together with ///
+     * Paper height, accepts values labeled with units. If set together with
      * PageWidth, takes priority over PageFormat.
      */
     @SerializedName("page_height")
@@ -81,14 +81,14 @@ public class PDFOptions {
 
     /**
      * Paper ranges to print, e.g., '1-5, 8, 11-13'. Defaults to the empty String,
-     * /// which means print all pages.
+     * which means print all pages.
      */
     @SerializedName("page_ranges")
     public String pageRanges;
 
     /**
      * Scale of the webpage rendering. Defaults to 1. Scale amount must be between
-     * /// 0.1 and 2.
+     * 0.1 and 2.
      */
     @SerializedName("scale")
     public Double scale;
@@ -161,8 +161,8 @@ public class PDFOptions {
 
     /**
      * Give any CSS @page size declared in the page priority over what is declared
-     * /// in `width` and `height` or `format` options. Defaults to false, which
-     * will /// scale the content to fit the paper size.
+     * in `width` and `height` or `format` options. Defaults to false, which will
+     * scale the content to fit the paper size.
      */
     @SerializedName("prefer_css_page_size")
     public Boolean preferCSSPageSize;
@@ -174,7 +174,7 @@ public class PDFOptions {
     public String watermarkURL;
 
     /**
-     * A String telling where to place the watermark on the page: 'topleft', ///
+     * A String telling where to place the watermark on the page: 'topleft',
      * 'topright', 'center', 'bottomleft', 'bottomright'. Defaults to 'center'.
      */
     @SerializedName("watermark_position")
@@ -226,7 +226,7 @@ public class PDFOptions {
 
     /**
      * A RFC 3066 language-tag denoting the language of this document, or an empty
-     * /// String if the language is unknown.
+     * String if the language is unknown.
      */
     @SerializedName("language")
     public String language;
@@ -499,11 +499,6 @@ public class PDFOptions {
         return this.pageHeight;
     }
 
-    ///
-    /// Paper ranges to print, e.g., '1-5, 8, 11-13'. Defaults to the empty String,
-    /// which means print all pages.
-    ///
-
     /**
      * Set the page ranges
      * 
@@ -629,8 +624,6 @@ public class PDFOptions {
     public String getHeaderURL() {
         return this.headerURL;
     }
-
-    /// --------------------------
 
     /**
      * Set the footer text
@@ -1118,8 +1111,10 @@ public class PDFOptions {
         if (this.subject != null) {
             builder.addTextBody("subject", this.subject, ContentType.TEXT_PLAIN);
         }
-        for (String keyword : this.keywords) {
-            builder.addTextBody("keywords", keyword, ContentType.TEXT_PLAIN);
+        if (this.keywords != null) {
+            for (String keyword : this.keywords) {
+                builder.addTextBody("keywords", keyword, ContentType.TEXT_PLAIN);
+            }
         }
         if (this.language != null) {
             builder.addTextBody("language", this.language, ContentType.TEXT_PLAIN);
