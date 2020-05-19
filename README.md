@@ -12,7 +12,7 @@ See the [Java API docs](https://docs.salesfly.com/java/).
 
 ## Requirements
 
-Java 1.8 or later.
+Java 11 or later.
 
 ## Installation
 

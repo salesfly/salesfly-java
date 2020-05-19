@@ -1,9 +1,6 @@
 package com.salesfly.api;
 
 import com.salesfly.SalesflyClient;
-
-import java.io.BufferedInputStream;
-
 import com.salesfly.models.PDFOptions;
 import com.salesfly.exceptions.APIException;
 import org.apache.http.HttpEntity;
@@ -21,6 +18,7 @@ public class PDF {
     /**
      * Create PDF document.
      * 
+     * @param options the PDF document options.
      * @return a buffer with PDF document bytes.
      * @throws APIException if the request failed
      */

@@ -54,10 +54,10 @@ public class MailMessage {
         this.subject = subject;
         this.text = text;
 
-        this.cc = new ArrayList<>();
-        this.bcc = new ArrayList<>();
-        this.tags = new ArrayList<>();
-        this.attachments = new ArrayList<>();
+        this.cc = new ArrayList<String>();
+        this.bcc = new ArrayList<String>();
+        this.tags = new ArrayList<String>();
+        this.attachments = new ArrayList<String>();
     }
 
     /**
@@ -201,7 +201,7 @@ public class MailMessage {
     /**
      * Sets the message char set
      * 
-     * s
+     * @param charset the char set to set
      */
     public void setCharset(final String charset) {
         this.charset = charset;

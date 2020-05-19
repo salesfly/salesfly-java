@@ -1,7 +1,6 @@
 package com.salesfly;
 
 import java.io.IOException;
-import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
 import java.lang.reflect.Type;
 

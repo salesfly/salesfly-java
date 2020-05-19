@@ -1,31 +1,31 @@
 package com.salesfly;
 
-import static org.junit.Assert.assertEquals;
+//import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertArrayEquals;
+//import static org.junit.Assert.assertArrayEquals;
 
 import java.io.FileOutputStream;
-import java.util.List;
+//import java.util.List;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.salesfly.SalesflyClient;
-import com.salesfly.api.GeoLocation;
-import com.salesfly.api.Mail;
+// import com.salesfly.SalesflyClient;
+// import com.salesfly.api.GeoLocation;
+// import com.salesfly.api.Mail;
 import com.salesfly.api.PDF;
 import com.salesfly.api.Usage;
 import com.salesfly.exceptions.APIException;
 import com.salesfly.exceptions.ResponseException;
 
 import com.salesfly.models.APIUsage;
-import com.salesfly.models.IPLocation;
-import com.salesfly.models.IPSecurity;
-import com.salesfly.models.MailMessage;
-import com.salesfly.models.MailReceipt;
+// import com.salesfly.models.IPLocation;
+// import com.salesfly.models.IPSecurity;
+// import com.salesfly.models.MailMessage;
+// import com.salesfly.models.MailReceipt;
 import com.salesfly.models.PDFOptions;
 
 public class SalesflyTest {
