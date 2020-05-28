@@ -1,14 +1,14 @@
 # salesfly-java
 
-[![Build Status](https://travis-ci.org/salesfly/salesfly-java.svg?branch=master)](https://travis-ci.org/salesfly/salesfly-java)
+<!-- [![Build Status](https://travis-ci.org/salesfly/salesfly-java.svg?branch=master)](https://travis-ci.org/salesfly/salesfly-java) -->
 
 <!--[![codecov](https://codecov.io/gh/salesfly/salesfly-java/branch/master/graph/badge.svg)](https://codecov.io/gh/salesfly/salesfly-java)-->
 
-Java client for [Salesfly API](https://salesfly.com)&reg;
+Java client for [Salesfly API](https://salesfly.com)&reg;. This client works with [Salesfly e-commerce](https://salesfly.com) and [SalesflyPDF](https://salesflypdf.com).
 
 ## Documentation
 
-See the [Java API docs](https://docs.salesfly.com/java/).
+See the [Java API docs](https://developers.salesfly.com/java/).
 
 ## Requirements
 
